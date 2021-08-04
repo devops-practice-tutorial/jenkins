@@ -1,0 +1,64 @@
+
+https://www.tecmint.com/install-jenkins-on-ubuntu/
+
+https://devopscube.com/jenkins-multibranch-pipeline-tutorial/
+
+thinBackup plugin.
+
+==================================================
+
+ had this problem too but managed to solve it, the error is that ur computer has saved a git username and password so if you shift to another account the error 403 will appear. Below is the solution
+For Windows you can find the keys here:
+
+control panel > user accounts > credential manager > Windows credentials > Generic credentials
+
+Next remove the Github keys.
+
+====================================================
+
+
+if you are using Tomcat. Update CATALINA_OPTS environment variable
+
+export CATALINA_OPTS=-Xms16m -Xmx256m;
+
+=============================================================
+
+Jenkins is known to have issues with lag. You can speed up its performance by doing these 5 things:
+
+Minimize amount of build on the master node
+Prune your build history by using the “Discard Old Builds” feature
+Clear old Jenkins data
+Define the proper heap size and try to stay below 32 GB ===>> all the objects will store in heap area.when you run the code "stack area" will be create, requred values collect from heap area.
+
+Tune the garbage collector ===> 
+
+s1 = hareesh
+s1 = mahesh
+
+mahesh will be store in heap area, garbage collector removes hareesh from heap area because it is not assigned to any object.
+
+JDK have JVM and JRE
+
+JVM compile the code and converts into byte code and JRE run the byte code.
+
+
+
+
+
+
+
+for checking jenkins authentication:
+
+  ---> curl http://127.0.0.1:8080
+  
+  
+  
+ jenkins log file location:
+ 
+   ----> /var/log/jenkins/jenkins.logs
+   
+   
+   
+   /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+
+
